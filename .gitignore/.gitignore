@@ -1,0 +1,8 @@
+build/*
+dist/*
+nbproject/*
+queues/*
+test/*
+.gitignore
+build.xml
+manifest.mf
