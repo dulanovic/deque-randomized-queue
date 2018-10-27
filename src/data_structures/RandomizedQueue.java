@@ -1,6 +1,5 @@
+package data_structures;
 
-// import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import java.util.Iterator;
@@ -144,10 +143,10 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     public static void main(String[] args) {
 
         RandomizedQueue<Integer> rq = new RandomizedQueue<>();
-        // StdOut.printf("rq.size() ---> %s\n", rq.size());
-        // StdOut.printf("rq.isEmpty() ---> %s\n", rq.isEmpty());
-        // rq.enqueue(949);
-        // StdOut.printf("rq.dequeue() ---> %s\n", rq.dequeue());
+        StdOut.printf("rq.size() ---> %s\n", rq.size());
+        StdOut.printf("rq.isEmpty() ---> %s\n", rq.isEmpty());
+        rq.enqueue(949);
+        StdOut.printf("rq.dequeue() ---> %s\n", rq.dequeue());
         // StdOut.printf("rq.sample() ---> %s\n", rq.sample());
         /* rq.enqueue("QSKINQPKJZ");
         rq.enqueue("ZFQNTFHUVA");
@@ -156,7 +155,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         rq.enqueue("PFAQFZXECY");
         StdOut.printf("rq.dequeue() ---> %s\n", rq.dequeue());
         StdOut.printf("rq.dequeue() ---> %s\n", rq.dequeue()); */
-        /* rq.enqueue(1);
+        rq.enqueue(1);
         rq.enqueue(2);
         rq.enqueue(3);
         rq.enqueue(4);
@@ -169,7 +168,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         Iterator i = rq.iterator();
         while (i.hasNext()) {
             StdOut.printf("Element ---> %d\n", i.next());
-        } */
+        }
     }
 
 }

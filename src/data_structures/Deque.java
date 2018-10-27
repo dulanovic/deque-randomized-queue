@@ -1,7 +1,8 @@
+package data_structures;
 
-import edu.princeton.cs.algs4.StdOut;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+import edu.princeton.cs.algs4.StdOut;
 
 public class Deque<Item> implements Iterable<Item> {
 
@@ -102,7 +103,7 @@ public class Deque<Item> implements Iterable<Item> {
     // remove and return the item from the front
     public Item removeFirst() {
         if (isEmpty()) {
-            throw new NoSuchElementException("Deque is already empty!!!");
+            throw new NoSuchElementException("data_structures.Deque is already empty!!!");
         }
         Item i = first.getItem();
         if (size == 1) {
@@ -120,7 +121,7 @@ public class Deque<Item> implements Iterable<Item> {
     // remove and return the item from the end
     public Item removeLast() {
         if (isEmpty()) {
-            throw new NoSuchElementException("Deque is already empty!!!");
+            throw new NoSuchElementException("data_structures.Deque is already empty!!!");
         }
         Item i = last.getItem();
         if (size == 1) {
@@ -199,19 +200,19 @@ public class Deque<Item> implements Iterable<Item> {
     public static void main(String[] args) {
 
         Deque<Integer> deque = new Deque<Integer>();
-        // StdOut.printf("deque.isEmpty() ---> %s\n", deque.isEmpty());
-        // StdOut.printf("size() ---> %d\n", deque.size());
-        // deque.addFirst(4);
-        // deque.addLast(4);
-        // StdOut.printf("deque.removeFirst() ---> %d\n", deque.removeFirst());
-        // StdOut.printf("deque.removeLast() ---> %d\n", deque.removeLast());
+        StdOut.printf("deque.isEmpty() ---> %s\n", deque.isEmpty());
+        StdOut.printf("size() ---> %d\n", deque.size());
+        deque.addFirst(4);
+        deque.addLast(4);
+        StdOut.printf("deque.removeFirst() ---> %d\n", deque.removeFirst());
+        StdOut.printf("deque.removeLast() ---> %d\n", deque.removeLast());
 
-        /* deque.addFirst(1);
+        deque.addFirst(1);
         deque.addFirst(2);
         Iterator<Integer> it = deque.iterator();
         it.next();
         // it.next();
-        StdOut.printf("hasNext() ---> %s\n", it.hasNext()); */
+        StdOut.printf("hasNext() ---> %s\n", it.hasNext());
 
     }
 
